@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_cover"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                tools:src="@tools:sample/backgrounds/scenic"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:layout_margin="8dp"
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@tools:sample/full_names"
+                android:layout_gravity="bottom"
+                android:textSize="22sp"
+                android:textColor="#fff"/>
+        </FrameLayout>
+
+        <TextView
+            android:layout_margin="8dp"
+            android:id="@+id/tv_author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            tools:text="@tools:sample/full_names"
+            android:textSize="22sp"
+            android:textColor="#000"/>
+
+        <TextView
+            android:layout_margin="8dp"
+            android:id="@+id/tv_news"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            tools:text="@tools:sample/lorem/random"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:textSize="12sp"
+            android:textColor="#000"/>
+
+        <Button
+            android:layout_margin="8dp"
+            style="?borderlessButtonStyle"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/btn_read_more"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textAllCaps="false"
+            android:text="Read More"
+            android:layout_gravity="right"/>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
